@@ -176,6 +176,13 @@ const sendFeedback =
 document.getElementById("sendFeedback");
 sendFeedback.addEventListener("click",()=>{
 
+  sendFeedback.addEventListener("click",()=>{
+
+console.log("TOMBOL DIKLIK");
+
+fetch(
+...
+
 fetch(
 "https://docs.google.com/forms/d/e/1FAIpQLSf6LI9pwpFTnTVBFennNwdrGwDJ8_JhWOyhMPTF8XehZeFQWw/formResponse",
 {
