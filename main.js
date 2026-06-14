@@ -170,6 +170,10 @@ duration:250
 });
 
 });
+const feedbackInput =
+document.querySelector(".feedback-input");
+const sendFeedback =
+document.getElementById("sendFeedback");
 sendFeedback.addEventListener("click",()=>{
 
 fetch(
@@ -191,10 +195,7 @@ body:
 alert("Masukan terkirim");
 
 });
-const feedbackInput =
-document.querySelector(".feedback-input");
-const sendFeedback =
-document.getElementById("sendFeedback");
+
 sendFeedback.addEventListener("click",()=>{
 
 console.log(selectedEmoji);
