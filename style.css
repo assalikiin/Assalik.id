@@ -544,3 +544,18 @@ font-size:14px;
 color:rgba(255,255,255,.7);
 
 }
+.rating-box{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:10px;
+
+margin-top:20px;
+
+flex-wrap:nowrap;
+
+}
