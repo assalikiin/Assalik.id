@@ -182,6 +182,11 @@ console.log(selectedEmoji);
 console.log(feedbackInput.value);
 
 });
+const ratingSlider =
+document.getElementById("ratingSlider");
+
+const ratingValue =
+document.getElementById("ratingValue");
 const ratingEmoji =
 document.getElementById("ratingEmoji");
 
