@@ -175,4 +175,11 @@ document.getElementById("sendFeedback");
 
 const feedbackInput =
 document.querySelector(".feedback-input");
+sendFeedback.addEventListener("click",()=>{
+
+console.log(selectedEmoji);
+
+console.log(feedbackInput.value);
+
+});
 
