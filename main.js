@@ -133,6 +133,7 @@ document.body.style.overflow="auto";
 },1000);
 
 });
+let selectedEmoji = "";
 
 const emojis =
 document.querySelectorAll(".emoji-rate");
@@ -140,6 +141,8 @@ document.querySelectorAll(".emoji-rate");
 emojis.forEach((emoji)=>{
 
 emoji.addEventListener("click",()=>{
+  selectedEmoji =
+emoji.textContent;
 
 emojis.forEach((e)=>{
 e.classList.remove("active");
@@ -167,7 +170,7 @@ duration:500
 });
 
 });
-let selectedEmoji = "";
+
 
 document
 .querySelectorAll(".emoji-rate")
