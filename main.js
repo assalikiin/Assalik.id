@@ -172,7 +172,25 @@ duration:250
 });
 sendFeedback.addEventListener("click",()=>{
 
-alert("Tombol terdeteksi");
+fetch(
+"https://docs.google.com/forms/d/e/1FAIpQLSf6LI9pwpFTnTVBFennNwdrGwDJ8_JhWOyhMPTF8XehZeFQWw/formResponse",
+{
+method:"POST",
+mode:"no-cors",
+
+headers:{
+"Content-Type":
+"application/x-www-form-urlencoded"
+},
+
+body:
+`entry.1811337757=${encodeURIComponent(ratingSlider.value)}
+&entry.991357781=${encodeURIComponent(feedbackInput.value)}`
+}
+
+);
+
+alert("Masukan terkirim");
 
 });
 const feedbackInput =
