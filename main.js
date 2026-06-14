@@ -172,16 +172,18 @@ duration:250
 });
 const feedbackInput =
 document.querySelector(".feedback-input");
+
 const sendFeedback =
 document.getElementById("sendFeedback");
+
 sendFeedback.addEventListener("click",()=>{
 
-  sendFeedback.addEventListener("click",()=>{
+if(!feedbackInput.value.trim()){
 
-console.log("TOMBOL DIKLIK");
+alert("Masukkan pesan terlebih dahulu");
+return;
 
-fetch(
-...
+}
 
 fetch(
 "https://docs.google.com/forms/d/e/1FAIpQLSf6LI9pwpFTnTVBFennNwdrGwDJ8_JhWOyhMPTF8XehZeFQWw/formResponse",
@@ -199,15 +201,11 @@ body:
 }
 );
 
+console.log("TOMBOL DIKLIK");
+
 alert("Masukan terkirim");
 
-});
-
-sendFeedback.addEventListener("click",()=>{
-
-console.log(selectedEmoji);
-
-console.log(feedbackInput.value);
+feedbackInput.value="";
 
 });
 const ratingSlider =
