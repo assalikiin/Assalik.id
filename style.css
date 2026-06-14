@@ -342,3 +342,95 @@ transform:scale(1);
 }
 
 }
+#welcomeOverlay{
+
+position:fixed;
+inset:0;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:#000;
+
+z-index:99999;
+
+}
+
+.welcome-card{
+
+width:90%;
+max-width:420px;
+
+padding:30px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(25px);
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:
+0 0 40px rgba(123,44,255,.25);
+
+text-align:center;
+
+animation:
+floatCard 4s ease-in-out infinite,
+pulseCard 4s ease-in-out infinite;
+
+}
+
+.welcome-card h2{
+
+margin-bottom:12px;
+
+}
+
+.welcome-card p{
+
+margin-bottom:25px;
+
+opacity:.8;
+
+}
+
+.welcome-card input{
+
+width:100%;
+
+padding:16px;
+
+margin-bottom:18px;
+
+border:none;
+
+outline:none;
+
+border-radius:18px;
+
+background:rgba(255,255,255,.08);
+
+color:white;
+
+}
+
+.welcome-card button{
+
+width:100%;
+
+padding:16px;
+
+border:none;
+
+border-radius:18px;
+
+background:#7b2cff;
+
+color:white;
+
+cursor:pointer;
+
+}
