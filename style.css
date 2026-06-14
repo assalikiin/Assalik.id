@@ -58,8 +58,9 @@ animation:titleReveal 1.5s ease forwards;
 
 .hero p{
 margin-top:15px;
-opacity:.8;
-  opacity:0;
+
+opacity:0;
+
 animation:titleReveal 1.5s ease forwards;
 animation-delay:.4s;
 }
@@ -171,10 +172,9 @@ box-shadow:
 0 10px 30px rgba(0,0,0,.35),
 0 0 20px rgba(123,44,255,.18);
 
-animation:floatCard 4s ease-in-out infinite;
-
-transition:.3s;
-  animation:pulseCard 4s ease-in-out infinite;
+animation:
+floatCard 4s ease-in-out infinite,
+pulseCard 4s ease-in-out infinite;
 }
 .card:hover{
 
