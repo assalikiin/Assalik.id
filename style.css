@@ -480,3 +480,17 @@ cursor:pointer;
 color:white;
 
 }
+.emoji-rate{
+
+transition:.3s;
+
+}
+
+.emoji-rate.active{
+
+transform:scale(1.25);
+
+box-shadow:
+0 0 25px rgba(123,44,255,.5);
+
+}
