@@ -93,12 +93,11 @@ transition:.4s;
 
 animation:none;
 
-transform:
-rotate(180deg)
-scale(.9);
+rotate:180deg;
+
+scale:.9;
 
 }
-
 .menu-items{
 display:flex;
 flex-direction:column;
@@ -300,15 +299,15 @@ filter:blur(0);
 @keyframes floatMenu{
 
 0%{
-transform:translateY(0px);
+translate:0 0;
 }
 
 50%{
-transform:translateY(-4px);
+translate:0 -4px;
 }
 
 100%{
-transform:translateY(0px);
+translate:0 0;
 }
 
 }
