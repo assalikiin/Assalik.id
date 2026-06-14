@@ -554,3 +554,17 @@ margin-top:20px;
 flex-wrap:nowrap;
 
 }
+
+#ratingValue{
+
+text-align:center;
+
+font-size:20px;
+
+font-weight:bold;
+
+margin:15px 0;
+
+color:#b98cff;
+
+}
