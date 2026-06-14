@@ -276,7 +276,7 @@ filter:blur(0);
 
 opacity:0;
 
-transform:translateY(60px);
+transform:translateY(60px) scale(.95);
 
 filter:blur(8px);
 
@@ -291,7 +291,7 @@ filter .8s ease;
 
 opacity:1;
 
-transform:translateY(0);
+transform:translateY(0) scale(1);
 
 filter:blur(0);
 
