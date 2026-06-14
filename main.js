@@ -170,4 +170,9 @@ duration:500
 });
 
 });
+const sendFeedback =
+document.getElementById("sendFeedback");
+
+const feedbackInput =
+document.querySelector(".feedback-input");
 
