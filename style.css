@@ -39,18 +39,19 @@ animation:bgMove 15s ease infinite;
 }
 
 .hero{
-height:100vh;
+min-height:70vh;
+height:auto;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+padding:140px 20px 80px;
 }
-
 .hero h1{
-font-size:4rem;
-letter-spacing:3px;
+font-size:clamp(2rem,8vw,5rem);
+letter-spacing:4px;
+text-align:center;
 }
 
 .hero p{
@@ -155,7 +156,11 @@ font-size:1.1rem;
 font-size:24px;
 }
 
-#upload,
+#upload{
+padding:70px 20px;
+text-align:center;
+}
+
 #gallery,
 #contact{
 padding:70px 20px;
@@ -180,15 +185,21 @@ scroll-snap-type:x mandatory;
 }
 
 .slider img{
-width:280px;
-height:380px;
+width:340px;
+height:190px;
 object-fit:cover;
 
-border-radius:25px;
+border-radius:24px;
 
 scroll-snap-align:center;
 
-background:#222;
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:
+0 0 10px rgba(123,44,255,.3),
+0 0 30px rgba(123,44,255,.25);
+
+transition:.4s;
 }
 
 .slider::-webkit-scrollbar{
