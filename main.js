@@ -29,3 +29,16 @@ threshold:0.15
 
 document.querySelectorAll(".fade-up")
 .forEach((el)=>observer.observe(el));
+document.addEventListener("click",(e)=>{
+
+if(
+!menuBtn.contains(e.target) &&
+!menuItems.contains(e.target)
+){
+
+menuItems.classList.remove("show");
+menuBtn.classList.remove("active");
+
+}
+
+});
