@@ -129,3 +129,20 @@ document.body.style.overflow="auto";
 },1000);
 
 });
+
+const emojis =
+document.querySelectorAll(".emoji-rate");
+
+emojis.forEach((emoji)=>{
+
+emoji.addEventListener("click",()=>{
+
+emojis.forEach((e)=>{
+e.classList.remove("active");
+});
+
+emoji.classList.add("active");
+
+});
+
+});
