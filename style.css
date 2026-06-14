@@ -433,3 +433,29 @@ color:white;
 cursor:pointer;
 
 }
+
+.rating-card{
+
+max-width:700px;
+
+margin:auto;
+
+padding:30px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.08);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.35),
+0 0 20px rgba(123,44,255,.18);
+
+animation:
+floatCard 4s ease-in-out infinite,
+pulseCard 4s ease-in-out infinite;
+
+}
