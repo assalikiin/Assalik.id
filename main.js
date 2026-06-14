@@ -188,3 +188,9 @@ document.getElementById("ratingSlider");
 const ratingValue =
 document.getElementById("ratingValue");
 
+ratingSlider.addEventListener("input",()=>{
+
+ratingValue.textContent =
+ratingSlider.value + "%";
+
+});
