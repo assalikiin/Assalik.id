@@ -137,6 +137,18 @@ emojis.forEach((emoji)=>{
 
 emoji.addEventListener("click",()=>{
 
+emojis.forEach((e)=>{
+e.classList.remove("active");
+});
+
+emoji.classList.add("active");
+
+setTimeout(()=>{
+
+emoji.classList.remove("active");
+
+},500);
+
 emoji.animate(
 [
 {transform:"scale(1)"},
