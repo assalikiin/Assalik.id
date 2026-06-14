@@ -1,3 +1,31 @@
+const visitTime =
+localStorage.getItem(
+"anwarussalikiin_visit"
+);
+
+if(visitTime){
+
+const now = Date.now();
+
+const twentyFourHours =
+24 * 60 * 60 * 1000;
+
+if(
+now - Number(visitTime)
+<
+twentyFourHours
+){
+
+document
+.getElementById("welcomeOverlay")
+.style.display = "none";
+
+document.body.style.overflow =
+"auto";
+
+}
+
+}
 const menuBtn =
 document.getElementById("menuBtn");
 
@@ -80,6 +108,10 @@ headers:{
 body:
 `entry.398847967=${encodeURIComponent(name)}`
 }
+);
+  localStorage.setItem(
+"anwarussalikiin_visit",
+Date.now()
 );
 
 overlay.style.transition="1s";
