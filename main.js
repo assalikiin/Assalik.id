@@ -167,3 +167,17 @@ duration:500
 });
 
 });
+let selectedEmoji = "";
+
+document
+.querySelectorAll(".emoji-rate")
+.forEach((emoji)=>{
+
+emoji.addEventListener("click",()=>{
+
+selectedEmoji =
+emoji.textContent;
+
+});
+
+});
