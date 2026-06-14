@@ -520,6 +520,11 @@ backdrop-filter:blur(20px);
 color:white;
 
 font-size:15px;
+  .feedback-input::placeholder{
+
+color:rgba(255,255,255,.6);
+
+  }
 
 }
 
