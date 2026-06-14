@@ -189,6 +189,9 @@ const ratingValue =
 document.getElementById("ratingValue");
 const ratingEmoji =
 document.getElementById("ratingEmoji");
+console.log(ratingSlider);
+console.log(ratingValue);
+console.log(ratingEmoji);
 
 ratingSlider.addEventListener("input",()=>{
 
