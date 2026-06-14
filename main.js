@@ -154,7 +154,7 @@ setTimeout(()=>{
 
 emoji.classList.remove("active");
 
-},500);
+},250);
 
 emoji.animate(
 [
@@ -163,7 +163,7 @@ emoji.animate(
 {transform:"scale(1)"}
 ],
 {
-duration:500
+duration:250
 }
 );
 
