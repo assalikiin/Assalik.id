@@ -184,10 +184,8 @@ headers:{
 },
 
 body:
-`entry.1811337757=${encodeURIComponent(ratingSlider.value)}
-&entry.991357781=${encodeURIComponent(feedbackInput.value)}`
+`entry.1811337757=${encodeURIComponent(ratingSlider.value)}&entry.991357781=${encodeURIComponent(feedbackInput.value)}`
 }
-
 );
 
 alert("Masukan terkirim");
