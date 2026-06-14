@@ -83,9 +83,6 @@ if(!visitTime){
 document.body.style.overflow="hidden";
 
 }
-
-document.body.style.overflow="hidden";
-
 enterBtn.addEventListener("click",()=>{
 
 const name =
