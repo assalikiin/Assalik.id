@@ -182,15 +182,37 @@ console.log(selectedEmoji);
 console.log(feedbackInput.value);
 
 });
-const ratingSlider =
-document.getElementById("ratingSlider");
-
-const ratingValue =
-document.getElementById("ratingValue");
+const ratingEmoji =
+document.getElementById("ratingEmoji");
 
 ratingSlider.addEventListener("input",()=>{
 
+const value =
+Number(ratingSlider.value);
+
 ratingValue.textContent =
-ratingSlider.value + "%";
+value + "%";
+
+if(value <= 20){
+
+ratingEmoji.textContent = "😭";
+
+}else if(value <= 40){
+
+ratingEmoji.textContent = "😕";
+
+}else if(value <= 60){
+
+ratingEmoji.textContent = "😐";
+
+}else if(value <= 80){
+
+ratingEmoji.textContent = "😊";
+
+}else{
+
+ratingEmoji.textContent = "😍";
+
+}
 
 });
