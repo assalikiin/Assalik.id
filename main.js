@@ -1,34 +1,13 @@
-const slides = document.querySelectorAll(".slide");
+const menuBtn =
+document.getElementById("menuBtn");
 
-let current = 0;
+const menuItems =
+document.getElementById("menuItems");
 
-setInterval(() => {
-slides[current].classList.remove("active");
+menuBtn.addEventListener("click",()=>{
 
-current++;
+menuBtn.classList.toggle("active");
 
-if(current >= slides.length){
-current = 0;
-}
+menuItems.classList.toggle("show");
 
-slides[current].classList.add("active");
-
-},5000);
-
-function updateClock(){
-
-const now = new Date();
-
-document.getElementById("clock").innerHTML =
-now.toLocaleTimeString("id-ID");
-
-document.getElementById("date").innerHTML =
-new Intl.DateTimeFormat("id-ID",{
-dateStyle:"full"
-}).format(now);
-
-}
-
-setInterval(updateClock,1000);
-
-updateClock();
+});
