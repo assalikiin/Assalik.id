@@ -39,7 +39,7 @@ animation:bgMove 15s ease infinite;
 }
 
 .hero{
-min-height:70vh;
+min-height:55vh;
 height:auto;
 display:flex;
 flex-direction:column;
