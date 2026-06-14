@@ -170,9 +170,11 @@ duration:250
 });
 
 });
-const sendFeedback =
-document.getElementById("sendFeedback");
+sendFeedback.addEventListener("click",()=>{
 
+alert("Tombol terdeteksi");
+
+});
 const feedbackInput =
 document.querySelector(".feedback-input");
 sendFeedback.addEventListener("click",()=>{
