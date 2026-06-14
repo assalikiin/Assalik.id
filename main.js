@@ -42,3 +42,56 @@ menuBtn.classList.remove("active");
 }
 
 });
+const overlay =
+document.getElementById("welcomeOverlay");
+
+const enterBtn =
+document.getElementById("enterSite");
+
+const visitorName =
+document.getElementById("visitorName");
+
+document.body.style.overflow="hidden";
+
+enterBtn.addEventListener("click",()=>{
+
+const name =
+visitorName.value.trim();
+
+if(!name){
+
+alert("Masukkan nama terlebih dahulu");
+
+return;
+
+}
+
+fetch(
+"https://docs.google.com/forms/d/e/1FAIpQLSfUGb6PYb6MQYG7S0W1MSmQbhnXT18WLaUlzx6pMaF4ndFErg/formResponse",
+{
+method:"POST",
+mode:"no-cors",
+
+headers:{
+"Content-Type":
+"application/x-www-form-urlencoded"
+},
+
+body:
+`entry.398847967=${encodeURIComponent(name)}`
+}
+);
+
+overlay.style.transition="1s";
+
+overlay.style.opacity="0";
+
+setTimeout(()=>{
+
+overlay.style.display="none";
+
+document.body.style.overflow="auto";
+
+},1000);
+
+});
