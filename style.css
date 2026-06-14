@@ -59,6 +59,9 @@ animation:titleReveal 1.5s ease forwards;
 .hero p{
 margin-top:15px;
 opacity:.8;
+  opacity:0;
+animation:titleReveal 1.5s ease forwards;
+animation-delay:.4s;
 }
 
 .menu-container{
@@ -253,5 +256,29 @@ opacity:1;
 transform:translateY(0);
 filter:blur(0);
 }
+
+}
+.fade-up{
+
+opacity:0;
+
+transform:translateY(40px);
+
+filter:blur(8px);
+
+transition:
+opacity .8s ease,
+transform .8s ease,
+filter .8s ease;
+
+}
+
+.fade-up.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+filter:blur(0);
 
 }
