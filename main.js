@@ -137,11 +137,16 @@ emojis.forEach((emoji)=>{
 
 emoji.addEventListener("click",()=>{
 
-emojis.forEach((e)=>{
-e.classList.remove("active");
-});
-
-emoji.classList.add("active");
+emoji.animate(
+[
+{transform:"scale(1)"},
+{transform:"scale(1.35) rotate(8deg)"},
+{transform:"scale(1)"}
+],
+{
+duration:500
+}
+);
 
 });
 
