@@ -64,14 +64,15 @@ z-index:2;
 }
 
 .hero-content h1{
-font-size:2.4rem;
-letter-spacing:5px;
+font-size:3.5rem;
+letter-spacing:8px;
 font-weight:700;
 }
-
 .hero-content p{
 margin-top:12px;
 opacity:.7;
+font-size:1rem;
+letter-spacing:2px;
 }
 
 .scroll-down{
@@ -114,6 +115,6 @@ transition:.3s;
 
 .card:hover,
 .card:active{
-transform:scale(1.04);
+transform:translateY(-4px) scale(1.02);
 background:rgba(255,255,255,.12);
 }
